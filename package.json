@@ -1,0 +1,12 @@
+{
+  "name": "s69_dance_challenge_matchmaker",
+  "version": "1.0.0",
+  "description": "**Project Tile :**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
