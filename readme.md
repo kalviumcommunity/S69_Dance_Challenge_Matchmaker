@@ -9,7 +9,7 @@ To allow people experience and keep updated with new dance trends and people wit
 
 **Key Features :**
 
-1. User management (User Regestration and login, User profiles)
+1. User management (User Registration and login, User profiles)
 2. Dance Trend Database (Dance trend repository, Search and filter)
 3. Matching Algorithm (Matchmaking logic, Pairing for challenges)
 4. Challenges and leaderboards (Challenge creation, leaderboard)
@@ -17,5 +17,5 @@ To allow people experience and keep updated with new dance trends and people wit
 6. Video and media integration (Video uploads, Voting system)
 7. Analytics and insights (User stats, Trend analytics)
 8. Gamification (Badges and rewards, XP and levels)
-9. Admin Dashboard (Moderation tools, Trend mangement)
+9. Admin Dashboard (Moderation tools, Trend management)
 10. Cross platform access (web interface for users to access the platform or integrate APIs with a mobile app)
