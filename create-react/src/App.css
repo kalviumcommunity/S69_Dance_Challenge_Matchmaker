@@ -1,0 +1,123 @@
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  border: 15px solid black;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: #8B2C35;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  background-clip: padding-box;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+  max-width: none;
+  width: 95%;
+  margin: auto;
+  background: linear-gradient(135deg, #8B2C35, #A43E4C);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Monomakh', sans-serif; 
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #dcd8d9;
+  margin-bottom: 20px;
+  font-family: 'Monomakh', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #e8d8d9;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Monomakh', serif;
+  font-weight: bold;
+  position: relative;
+  animation: heartbeat 2s infinite ease-in-out;
+  box-shadow: 0px 4px 20px rgba(255, 182, 193, 0.4);
+}
+
+.hero button:hover {
+  background-color: #efb7b9;
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.dancer {
+  filter: drop-shadow(0px 0px 20px rgba(255, 182, 193, 0.6));
+}
+
+.hero h1 {
+  text-shadow: 0px 4px 10px rgba(255, 182, 193, 0.6);
+}
+
+.dance-bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  opacity: 0.2;
+}
+
+.dance-bg.left {
+  left: 5%;
+}
+
+.dance-bg.right {
+  right: 5%;
+  transform: translateY(-50%) scaleX(-1); /* Flip for symmetry */
+}
+
+.dancer {
+  animation: floatDancer 2s ease-in-out infinite;
+}
+
+@keyframes floatDancer {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+body {
+  background: linear-gradient(-45deg, #8B0000, #AA1F23, #B22222, #DC143C);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
