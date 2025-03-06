@@ -1,20 +1,25 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import EntityCard from "./components/EntityCard"; // Importing the component
 
 function App() {
+  const entityData = {
+    name: "Hip-Hop Battle",
+    description: "Find the best hip-hop dancers and challenge them to a dance-off!",
+  };
+
   return (
     <div className="app">
       <header className="hero">
-        <img src='dance-removebg-preview.png' alt='Dancer' className='dancer'></img>
-        <img src="dance-removebg-preview.png" alt="Dancer" className="dance-bg left" />
-        <img src="dance-removebg-preview.png" alt="Dancer" className="dance-bg right" />
-
-
         <h1>Dance Challenge Matchmaker</h1>
-        <p>Dance, Love, Trends, Joy</p>
-        <button>💃 Start Your Dance Journey 💃</button>
-
+        <p>Dance, Joy, Trends</p>
+        <button>View Trends !!</button>
       </header>
+
+      {/* Rendering the EntityCard component with dummy data */}
+      <section className="entity-section">
+        <EntityCard name={entityData.name} description={entityData.description} />
+      </section>
     </div>
   );
 }
