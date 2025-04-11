@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(238, 175, 175);
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
